@@ -1,0 +1,47 @@
+
+%-----------------------------------------------%
+% Para alterar o gênero dos comandos orientador
+% e coorientador.
+%-----------------------------------------------%
+% \renewcommand{\orientadorname}{Orientadora:}
+\renewcommand{\coorientadorname}{Coorientadora:}
+%-----------------------------------------------%
+
+
+%-----------------------------------------------%
+% Informações de dados para CAPA e FOLHA DE ROSTO
+%-----------------------------------------------%
+\titulo{Modelo de Trabalho Acadêmico com \abnTeX}
+\autor{Nome do Aluno}
+\local{Itajaí - SC}
+\data{setembro/2023}
+\orientador{Prof. Orientador da Silva, Dr.}
+\coorientador{Profa. Fulana da Silva, Dra.}
+\instituicao{%
+  Universidade do Vale do Itajaí -- UNIVALI
+  \par
+  Campus Itajaí
+  \par
+  Mestrado Acadêmico em Computação Aplicada}
+\tipotrabalho{dissertação (Graduação)}
+%-----------------------------------------------%
+
+
+%-----------------------------------------------%
+% O preambulo deve conter o tipo do trabalho, o objetivo, o nome da instituição e a área de concentração 
+
+\preambulo{Projeto de dissertação apresentado como requisito parcial para a obtenção do título de Mestre em Computação Aplicada pela Universidade do Vale do Itajaí.}
+
+%\textoaprovacao{Este trabalho foi julgado adequado para obtenção do título de Mestre em Computação Aplicada, pelo Universidade do Vale do Itajaí, e aprovado na sua forma final pela comissão avaliadora abaixo indicada.}
+%-----------------------------------------------%
+
+%-----------------------------------------------%
+% Estilo de cabeçalho que só contém o número da 
+% página e uma linha
+%-----------------------------------------------%
+\makepagestyle{cabecalholimpo}
+\makeevenhead{cabecalholimpo}{\thepage}{}{} % páginas pares
+\makeoddhead{cabecalholimpo}{}{}{\thepage} % páginas ímpares
+% \makeheadrule{cabecalholimpo}{\textwidth}{\normalrulethickness} % linha
+%-----------------------------------------------%
+

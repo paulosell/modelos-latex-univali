@@ -1,0 +1,45 @@
+
+%-----------------------------------------------%
+% Listas ilustrações, tabelas, códigos, abreviaturas
+% símbolos
+%-----------------------------------------------%
+
+% Lista de ilustrações
+\begin{comment}
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+\end{comment}
+
+%Lista de quadros
+\pdfbookmark[0]{\listofquadrosname}{loq}
+\listofquadros*
+\cleardoublepage
+
+\begin{comment}
+% Lista de tabelas
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+% Lista de códigos
+\pdfbookmark[0]{\lstlistlistingname}{lol}
+\begin{KeepFromToc}
+    \lstlistoflistings
+\end{KeepFromToc}
+\cleardoublepage
+\end{comment}
+% Lista de abreviaturas
+\printglossary[type=\acronymtype,nonumberlist,title=Lista de abreviaturas e siglas]
+\cleardoublepage
+
+\begin{comment}
+% Lista de símbolos
+\printglossary[type=symbols,nonumberlist,title=Lista de símbolos]
+\cleardoublepage
+\end{comment}
+% Sumário
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+%-----------------------------------------------%
