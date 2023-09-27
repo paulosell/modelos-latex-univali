@@ -16,6 +16,30 @@ Modelos de documentos em LaTeX para docentes e discentes para uso no Programa de
 - **Dissertação**
   - [Modelo que faz uso da classe anTeX2 para dissertação de mestrado](dissertacao)
 
+## Utilização
+
+- Instalar o pacote `latexmk` e o `texlive`
+```shell
+$ sudo apt-get install latexmk texlive-full 
+```
+- Compilar os projetos
+```bash
+latexmk -outdir=out -pdf apresentacao/titulo-leve/titulo-leve.tex
+```
+> Também é possível exportar os modelos e compilar diretamente no [overleaf](https://pt.overleaf.com/). :leaves:
+
+## Extensões recomendadas para o vscode
+
+Estes modelos funcionam bem no vscode utilizando as seguintes extensões:
+
+- [Latex Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+- [bibtexLanguage](https://marketplace.visualstudio.com/items?itemName=phr0s.bib)
+- [Brazilian Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian)
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+
+> A extensão [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) usa por padrão o latexmk para compilar.
+
+
 
 ## Créditos
 
